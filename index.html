@@ -7,11 +7,8 @@
           <script src="https://code.jquery.com/jquery.min.js"></script>
           <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-          <script>
-
-    // calculates the Lohn digit, see https://en.wikipedia.org/wiki/Luhn_algorithm
-            function calculateCheckDigit(digitsAsString) {
+</script>
+         function calculateCheckDigit(digitsAsString) {
       //const digits = ('' + dob + gender + sequence + citizenship + eight).split('').map(d => Number(d))
       const digits = digitsAsString.replace(/\D/g, '').split('').map(d => Number(d))
       const checkSum = digits.reverse().map((d, ix) => {
